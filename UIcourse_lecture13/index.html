@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>This is a simple text</p>
+
+		<input type="name" id="name" placeholder="name">
+		<input type="age" id="age" placeholder="age">
+		<input type="button" onclick = "newUser()" value="Add New User">
+
+
+	<div id="content"></div>
+
+
+	<script type="text/html" id="template">
+		<div style="display: inline-block; border: 1px solid; padding: 15px">
+			<p>{NAME}</p>
+			<p>{AGE}</p>
+		</div>
+	</script>
+
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

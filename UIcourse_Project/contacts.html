@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Древо Україна,деревообробна фірма,наші,контакти,як знайти">
+	<meta name="description" content="Дерев’яні євровікна Львів фірми 'Древо Україна'. Наші контакти: м.Львів, вул.Стрийська 48">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Древо Україна | Контакти</title>
+	<link rel="icon" type="image/x-icon" href="images/leaves.png">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+<!-- 	<meta property="fb:admins" content="100000550459738">
+	<meta property="fb:app_id" content="193580224023724"> -->
+</head>
+<body>
+<!-- 	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+ -->
+			<!--		Header			-->
+	<header>
+		<a href="/">
+			<img src="images/logo.png" srcset="images/logo.png 1x, images/logo2x.png 2x" alt="Логотип Древо Україна" class="logo">
+		</a>
+		<div class="contacts">
+			<select id="lang">
+				<!-- <option value="en/contacts.html" id="en">English</option> -->
+				<option value="" selected id="ua">Ukrainian</option>
+				<!-- <option value="pl/contacts.html" id="pl">Polska</option> -->
+				<option value="ru/contacts.html" id="ru">Russian</option>
+			</select>
+			<p><b>Tel:</b> +38 (097) 99-25-392<br>
+				+38 (063) 67-92-278</p>
+			<p><b>E-mail:</b> drevo_ua@ukr.net</p>
+		</div>
+		<div class="navigation" id="nav">
+			<nav class="reveal">
+				<h3 class="handle menu">Меню &nbsp; &#9776; &nbsp; </h3>
+
+				<ul>
+					<li><a href="index.html">Головна</a></li>
+					<li>
+						<a href="our_products.html">Продукція &#9662;</a>
+						<ul>
+							<li><a href="windows.html">Вікна</a></li>
+							<li><a href="doors.html">Двері</a></li>
+							<li><a href="gallery.html">Галерея</a></li>
+						</ul>
+					</li>
+					<li><a href="production.html">Виробництво</a></li>
+					<li><a href="service.html">Сервіс</a></li>
+					<li><a href="cooperation.html">Співпраця</a></li>
+					<li><a href="credit.html">Кредитування</a></li>
+					<li class="active"><a href="contacts.html">Контакти</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section class="collage"></section>
+		<section class="description">
+			<h1>ТОВ "Древо Україна"</h1>
+		</section>
+		<section class="content-full">
+			<address>
+				Україна, м. Львів,<br>
+				вул. Стрийська 48, к318<br>
+				Тел. +38 (097) 99-25-392<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+38 (063) 67-92-278<br>
+				E-mail: drevo_ua@ukr.net
+			</address>
+			<div id="map-canvas"></div>
+
+<!-- 			<h4>Слідкуйте за нами у соцмережах:</h4>
+			<p class="imgContainer"><a href="http://"><img src="images/"> facebook</a></p>
+			<br> -->
+<!-- 			<h5>Всі питання і пропозиції ви можете написати нижче:</h5>
+			<form class="messageForm" action="MAILTO:drevo_ua@ukr.net" method="post" enctype="text/plain">
+				<p>Name:</p>
+				<input type="name" name="name" placeholder="your name" required
+><br>
+				<p>E-mail:</p>
+				<input type="text" name="mail" placeholder="your email" required
+><br>
+				<p>Comment:</p>
+				<input type="text" name="comment" placeholder="your comment" required
+><br><br>
+				<input type="submit" value="Send">
+				<input type="reset" value="Reset">
+			</form> -->
+
+<!-- 			<div class="imgContainer">
+				<div class="fb-comments" data-href="http://drevo-ukraine.com/contacts.html" data-width="400" data-numposts="5" data-colorscheme="light"></div>
+			</div> -->
+			<br>
+		</section>
+	</main>
+	<footer>
+		<div class="contacts_footer">
+			<select id="lang_footer">
+				<!-- <option value="en/contacts.html" id="en">English</option> -->
+				<option value="" selected id="ua">Ukrainian</option>
+				<!-- <option value="pl/contacts.html" id="pl">Polska</option> -->
+				<option value="ru/contacts.html" id="ru">Russian</option>
+			</select>
+			<p><b>Tel:</b> +38 (097) 99-25-392<br>
+				+38 (063) 67-92-278</p>
+			<p><b>E-mail:</b> drevo_ua@ukr.net</p>
+		</div>
+		<p>Drevo Ukraine 2015 &copy;</p>
+	</footer>
+</body>
+<script src="scripts/app.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript">
+		function initialize() {
+			var mapCanvas = document.getElementById('map-canvas');
+			var mapOptions = {
+				center: new google.maps.LatLng(49.822309, 24.020163),
+				zoom: 15,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(mapCanvas, mapOptions)
+				var marker = new google.maps.Marker({
+				position: {lat: 49.822309, lng: 24.020163},
+				map: map
+			});
+			var infowindow = new google.maps.InfoWindow({
+				content: '<p>"ТОВ Древо Україна"<br>вул. Стрийська 48, к318</p>'
+			});
+				google.maps.event.addListener(marker, 'click', function() {
+				infowindow.open(map, marker);
+			})
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</html>
