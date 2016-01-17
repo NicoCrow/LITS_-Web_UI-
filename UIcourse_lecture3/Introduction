@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body marginwidth="14%" link="firebrick">
+	<h1>
+		<center>
+			INTRODUCTION:<br>
+			FIVE THINGS YOU SHOULD KNOW<br>
+			ABOUT HTML5
+		</center>
+	</h1>
+	<br>
+	<article>
+		<h2>
+			1.It's not one big thing
+		</h2>
+		<p>
+			<img src="http://diveintohtml5.info/i/video.png" alt="mock video player" width="226" height="166" align="right" hspace="25" vspace="10">
+			You may well ask: “How can I start using <abbr>HTML5</abbr> if older browsers don’t support it?” But the question itself is misleading. <abbr>HTML5</abbr> is not one big thing; it is a collection of individual features. So you can’t detect “<abbr>HTML5</abbr> support,” because that doesn’t make any sense. But you <em>can</em> detect support for individual features, like canvas, video, or geolocation.
+		</p>
+		<p>
+			You may think of HTML as tags and angle brackets. That’s an important part of it, but it’s not the whole story. The <abbr>HTML5</abbr> specification also defines how those angle brackets interact with JavaScript, through the Document Object Model (<abbr>DOM</abbr>). <abbr>HTML5</abbr> doesn’t just define a <code>&lt;video&gt;</code> tag; there is also a corresponding <abbr>DOM</abbr> <abbr>API</abbr> for video objects in the DOM. You can use this API to detect support for different video formats, play a video, pause, mute audio, track how much of the video has been downloaded, and everything else you need to build a rich user experience around the <code>&lt;video&gt;</code> tag itself.
+		</p>
+		<p>
+			<a href="http://diveintohtml5.info/detect.html">Chapter 2</a> and <a href="http://diveintohtml5.info/everything.html">Appendix A</a> will teach you how to properly detect support for each new <abbr>HTML5</abbr> feature.
+		</p>
+	</article>
+
+
+	<article>
+		<h2>
+			2. You don't need to throw anything away
+		</h2>
+		<p>
+			<img src="http://diveintohtml5.info/i/forms.png" alt="sample form controls" width="134" height="196" align="left" hspace="25" vspace="10">
+			Love it or hate it, you can’t deny that <abbr>HTML 4</abbr> is the most successful markup format ever. <abbr>HTML5</abbr> builds on that success. You don’t need to throw away your existing markup. You don’t need to relearn things you already know. If your web application worked yesterday in <abbr>HTML 4</abbr>, it will still work today in <abbr>HTML5</abbr>. Period.
+		</p>
+		<p>
+			Now, if you want to <em>improve</em> your web applications, you’ve come to the right place. Here’s a concrete example: <abbr>HTML5</abbr> supports all the form controls from <abbr>HTML 4</abbr>, but it also includes new input controls. Some of these are long-overdue additions like sliders and date pickers; others are more subtle. For example, the email input type looks just like a text box, but mobile browsers will customize their onscreen keyboard to make it easier to type email addresses. Older browsers that don’t support the email input type will treat it as a regular text field, and the form still works with no markup changes or scripting hacks. This means you can start improving your web forms <em>today</em>, even if some of your visitors are stuck on IE 6.
+		</p>
+		<p>
+			Read all the gory details about <abbr>HTML5</abbr> forms in <a href="http://diveintohtml5.info/forms.html">Chapter 9</a>.
+		</p>
+	</article>
+
+
+	<article>
+		<h2>
+			3. It’s easy to get started
+		</h2>
+		<p>
+			<img src="http://diveintohtml5.info/i/markup-with-arrow.png" alt="sample HTML markup" width="234" height="202" align="right" hspace="25" vspace="10">
+			“Upgrading” to <abbr>HTML5</abbr> can be as simple as changing your <em>doctype</em>. The doctype should already be on the first line of every <abbr>HTML</abbr> page. Previous versions of <abbr>HTML</abbr> defined a lot of doctypes, and choosing the right one could be tricky. In <abbr>HTML5</abbr>, there is only one doctype:
+
+			<blockquote>
+				<code>&lt;!DOCTYPE html&gt;</code>
+			</blockquote>
+
+			Upgrading to the <abbr>HTML5</abbr> doctype won’t break your existing markup, because <a href="http://www.w3.org/TR/html5-diff/#absent-elements">obsolete elements</a> previously defined in <abbr>HTML 4</abbr> will still render in <abbr>HTML5</abbr>. But it will allow you to use — and validate — new semantic elements like <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;header&gt;</code>, and <code>&lt;footer&gt;</code>. You’ll learn all about these new elements in <a href="http://diveintohtml5.info/semantics.html">Chapter 3</a>.
+		</p>
+	</article>
+
+
+	<article>
+		<h2>
+			4. It already works
+		</h2>
+		<p>
+			<img src="http://diveintohtml5.info/i/rel-email.png" alt="form field with onscreen keyboard" width="227" height="192" align="left" hspace="25" vspace="10">
+			Whether you want to draw on a canvas, play video, design better forms, or build web applications that work offline, you’ll find that HTML5 is already well-supported. Firefox, Safari, Chrome, Opera, and mobile browsers already support canvas (<a href="http://diveintohtml5.info/canvas.html">Chapter 4</a>), video (<a href="http://diveintohtml5.info/video.html">Chapter 5</a>), geolocation (<a href="http://diveintohtml5.info/geolocation.html">Chapter 6</a>), local storage (<a href="http://diveintohtml5.info/storage.html">Chapter 7</a>), and more. Google already supports microdata annotations (<a href="http://diveintohtml5.info/extensibility.html">Chapter 10</a>). Even Microsoft — rarely known for blazing the trail of standards support — supports most <abbr>HTML5</abbr> features in Internet Explorer 9.
+		</p>
+		<p>
+			<img src="http://diveintohtml5.info/i/gears.png" alt="Gears saying 'I can help'" width="125" height="75" align="right" hspace="25" vspace="10">
+
+			Each chapter of this book includes the all-too-familiar browser compatibility charts. But more importantly, each chapter includes a frank discussion of your options if you need to support older browsers. <abbr>HTML5</abbr> features like geolocation (<a href="http://diveintohtml5.info/geolocation.html">Chapter 6</a>) and video (<a href="http://diveintohtml5.info/video.html">Chapter 5</a>) were first provided by browser plugins like Gears or Flash. Other features, like canvas (<a href="http://diveintohtml5.info/canvas.html">Chapter 4</a>), can be emulated entirely in JavaScript. This book will teach you how to target the native features of modern browsers, without leaving older browsers behind.
+		</p>
+	</article>
+
+
+	<article>
+		<h2>
+			5. It’s here to stay
+		</h2>
+		<p>
+			Tim Berners-Lee invented the world wide web in the early 1990s. He later founded the <abbr>W3C</abbr> to act as a steward of web standards, which the organization has done for more than 15 years. Here is what the <abbr>W3C</abbr> had to say about the future of web standards, in July 2009:
+
+			<blockquote>
+				Today the Director announces that when the <abbr>XHTML 2</abbr> Working Group charter expires as scheduled at the end of 2009, the charter will not be renewed. By doing so, and by increasing resources in the <abbr>HTML</abbr> Working Group, <abbr>W3C</abbr> hopes to accelerate the progress of <abbr>HTML5</abbr> and clarify <abbr>W3C</abbr>’s position regarding the future of <abbr>HTML</abbr>.
+			</blockquote>
+
+			<abbr>HTML5</abbr> is here to stay. <a href="http://diveintohtml5.info/past.html">Let’s dive in</a>.
+		</p>
+	</article>
+
+
+	<table border="1" cellspacing="0" cellpadding="10" width="100%" align="center">
+		<tr>
+			<th bgcolor="000" align="left"><font color="white">DID YOU KNOW?</font></th>
+		</tr>
+		<tr>
+			<td>
+				<img src="http://diveintohtml5.info/i/openclipart.org_johnny_automatic_bag_of_money.png" alt="johnny automatic bag of money" width="190" height="245" align="right">
+				<p>In association with Google Press, O’Reilly is distributing this book in a variety of formats, including paper, ePub, Mobi, and DRM-free PDF. The paid edition is called “HTML5: Up & Running,” and it is available now.
+				</p>
+
+				<p>
+				If you liked this introduction and want to show your appreciation, you can <a href="http://www.amazon.com/HTML5-Up-Running-Mark-Pilgrim/dp/0596806027?ie=UTF8&tag=diveintomark-20&creativeASIN=0596806027">buy “HTML5: Up & Running” with this affiliate link</a> or <a href="http://oreilly.com/catalog/9780596806033">buy an electronic edition directly from O’Reilly</a>. You’ll get a book, and I’ll get a buck. I do not currently accept direct donations.
+				</p>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

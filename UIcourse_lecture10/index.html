@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="d">
+		<button id="b">click me!</button>
+	</div>
+	<form name="myForm" action="script.php" id="myForm">
+		<input name="asv">
+		<input type="submit">
+	</form>
+	<script type="text/javascript">
+		function handler(e){
+			console.log(e.currentTarget)
+			console.log(e.target, 'end')
+			//e.stopPropagation()
+		}
+		var i = 0;
+		document.addEventListener('click', function(){console.log('body')}, true)
+		document.getElementById('d').addEventListener('click', function(){i++;console.log(i)})
+		document.getElementById('b').addEventListener('click', handler)
+		document.getElementById('d').addEventListener('click', handler)
+		document.getElementById('d').removeEventListener('click', handler)
+		//document.getElementById('b').addEventListener('mouseover', function(e){e.curentTarget.style.color = 'green';})
+		//document.getElementById('b').addEventListener('mouseout', function(e){e.curentTarget.style.color = 'black';})
+		function on(e){
+			e.currentTarget.style.color = 'green';
+		}
+		function off(e){
+			e.currentTarget.style.color = 'black';
+		}
+		document.getElementById('b').onmouseover = on;
+		document.getElementById('b').onmouseout = off;
+		
+	</script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

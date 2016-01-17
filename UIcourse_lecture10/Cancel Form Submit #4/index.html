@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cancel Form Submit</title>
+</head>
+<body>
+	<form id="myForm" action="action.php">
+		<input name="asv">
+		<input type="submit">
+	</form>
+	<script type="text/javascript">
+		 var code = function (evt) {
+			if (evt.preventDefault) {
+				evt.preventDefault();
+			}
+			return false;
+		};
+		window.onload = function() {
+			var element = window.document.getElementById("myForm");
+			if (element.addEventListener) {
+				element.addEventListener("submit", code, false);
+			}
+		};
+	</script>
+</body>
+</html>

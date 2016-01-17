@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Text Formatting Elements</title>
+	<basefont size="4"/>
+</head>
+<body>
+	<p>
+		<a href="cakes.html"><font color="red">&lt;a&gt;</font> element</a> - defines an anchor (or hyperlink).
+		<br>
+		<abbr title="Hyper Text Murkup Language">HTML</abbr> <font color="red">&lt;abbr&gt;</font> element - defines an abbreviated form of a longer word or phrase.
+		<br>
+		<acronym title="Graphical User Interface">GUI</acronym> <font color="red">&lt;acronym&gt;</font> element - an abbreviation comprising the initial letters of a given phrase.
+		<br>
+		<address>Brought to you by the Editorial and News Team:<br/>
+				<a href="mailto:news@example.org">Email the news team</a><br/>
+				Mail us at PO Box 123, Citysville<br/>
+				Tel +1 212 3131
+		</address> <font color="red">&lt;address&gt;</font> element - identifies an administrator or owner of a document.
+		<br>
+		<br>
+		"Mr <b>Big</b> Stuff" <font color="red">&lt;b&gt;</font> element - sets enclosed text to bold type.
+		<br>
+		<font color="red">&lt;basefont&gt;</font> element - sets a basic font size for normal browser text. The basefont element is set inside the head of the document.
+		<br>
+		<bdo dir="rtl">Canoe</bdo> <font color="red">&lt;bdo&gt;</font> element - overrides the current text direction.
+		<br>
+		It's <big>bigger, <big>better, and now with <big>20% more beetroot goodness!</big></big></big> <font color="red">&lt;big&gt;</font> element - increases the font size of text.
+		<br>
+		<blink><font color="red">&lt;blink&gt;</font></blink> element - blinks text on-off.
+		<br>
+		<center><font color="red">&lt;center&gt;</font> element - centers all the enclosed content.</center>
+		<br>
+		<p>Kurt Vonnegut, author of such classics as <cite>Slaughterhouse 5</cite>, <cite>Player Piano</cite>, and <cite>The Sirens of Titan</cite>, will be sorely missed by the literary world.</p> <font color="red">&lt;cite&gt;</font> element - identifies a reference to a written work, play, book, or magazine.
+		<br>
+		To indicate a reference to a printed work, you'd use the <code>cite</code> attribute as follows: <code>&lt;p&gt;My favorite book is &lt;cite&gt;The Two Towers&lt;/cite&gt;&lt;/p&gt;</code>. <font color="red">&lt;code&gt;</font> element - identifies text as computer or machine-readable code.
+		<br>
+		<strike>The guy is a fool.</strike><comment>I obviously misunderstood what he was saying at first!</comment><!-- I obviously misunderstood what he was saying at first! --> The guy is an absolute genius. What was I thinking? <font color="red">&lt;comment&gt;</font> element - inserts a comment into markup.
+		<br>
+		Bernie enjoyed nothing more than a <del datetime="2007-11-05T23:31:05Z">night out on the town at his favorite drag queen show</del> <ins datetime="2007-11-05T23:33:32Z">quiet night in with a warm cup of cocoa.</ins> <font color="red">&lt;del&gt;</font> element - identifies deleted content.
+		<br>
+		The concept of <dfn>progressive enhancement</dfn> has been about for a few years.⋮ <font color="red">&lt;dfn&gt;</font> element - identifies the defining instance of a term.
+		<br>
+		Do you <em>really</em> need to buy those expensive jeans? <font color="red">&lt;em&gt;</font> element - signifies emphasized content.
+		<br>
+		This is not the way to emphasise text on a page - <font color="lime">remember this!</font> <font color="red">&lt;font&gt;</font> element - the (out-of-favor) font styling element.
+		<br>
+		The logo for the Left-Leaning organization uses italic text on the word leaning, as shown here: "left-<i>leaning</i>" <font color="red">&lt;i&gt;</font> element - sets the enclosed text to italic type.
+		<br>
+		Bernie enjoyed nothing more than a <del datetime="2007-11-05T23:31:05Z">night out on the town at his favorite drag queen show</del> <ins datetime="2007-11-05T23:33:32Z">quiet night in with a warm cup of cocoa</ins><font color="red">&lt;ins&gt;</font> element - identifies inserted content.
+		<br>
+		Hold down <kbd>CTRL</kbd>, <kbd>ALT</kbd>, and <kbd>DELETE</kbd>, then select Task Manager<font color="red">&lt;kbd&gt;</font> element - identifies a typed entry on a keyboard.
+		<br>
+		<marquee>This text is a moving target. Don't you just love it?</marquee><font color="red">&lt;marquee&gt;</font> element - scrolling text area.
+		<br>
+		Our telephone number is <nobr>0800 123 123 123</nobr>.<font color="red">&lt;nobr&gt;</font> element - tells browser not to break/wrap contained text.
+		<br>
+	</p>
+	<noscript>
+		<h1>Houston, we have a problem</h1>
+		<p>It appears that your web browser does not support JavaScript,
+			or you have temporarily disabled scripting. Either way, this site
+			won't work without it. Please take a look at our
+		<a href="/support/browsers/">browser support page</a> for more help.</p>
+	</noscript><font color="red">&lt;noscript&gt;</font> element - provides alternative content for use when scripts aren’t supported or are switched off.
+	<br>
+
+	<font color="red">&lt;plaintext&gt;</font> element - tells browser to treat all following text as plain text. <font color="blue">!Don`t use it!</font>
+	<br>
+	<p>
+		<pre><code>//Do a bit of code debugging     ||-- Check Array vals
+document.write ("&lt;ul&gt;");
+for (i=1;i&lt;array.length;i++)
+ {
+ str += "&lt;li&gt;Value of array " + i + " is: " +array[i] + "&lt;/li&gt;";
+ }
+document.write(str);
+document.write ("&lt;/ul&gt;");
+</code></pre><font color="red">&lt;pre&gt;</font> element - defines preformatted text in which whitespace and line breaks are preserved.
+		<br>
+		Heck, even Bill Gates is quoted as saying <q>We need Microformats,</q> which can only be a good thing for the cause.<font color="red">&lt;q&gt;</font> element - defines an inline quotation.
+		<br>
+		<ruby>
+			<rb>家辺 勝文</rb>
+			<rt>liaison</rt>
+		</ruby> <font color="red">&lt;rb&gt;</font> element - specifies ruby base text.
+		<br>
+		<ruby xml:lang="ja">
+			<rbc>
+				<rb>斎</rb>
+				<rb>藤</rb>
+				<rb>信</rb>
+				<rb>男</rb>
+			</rbc>
+			<rtc class="reading">
+				<rt>さい</rt>
+				<rt>とう</rt>
+				<rt>のぶ</rt>
+				<rt>お</rt>
+			</rtc>
+			<rtc class="annotation">
+				<rt rbspan="4" xml:lang="en">W3C Associate Chairman</rt>
+			</rtc>
+		</ruby> <font color="red">&lt;rbc&gt;</font> element - defines the ruby base container for complex ruby markup.
+		<br>
+		<ruby>
+			<rb>家辺 勝文</rb>
+			<rt><rp>(</rp>liaison<rp>)</rp></rt>
+		</ruby> <font color="red">&lt;rp&gt;</font> element - specifies ruby parentheses.
+		<br>
+		<ruby>
+			<rb>家辺 勝文</rb>
+			<rt>liaison</rt>
+		</ruby> <font color="red">&lt;rt&gt;</font> element - defines ruby text annotation.
+		<br>
+		<ruby xml:lang="ja">
+			<rbc>
+				<rb>斎</rb>
+				<rb>藤</rb>
+				<rb>信</rb>
+				<rb>男</rb>
+			</rbc>
+			<rtc class="reading">
+				<rt>さい</rt>
+				<rt>とう</rt>
+				<rt>のぶ</rt>
+				<rt>お</rt>
+			</rtc>
+			<rtc class="annotation">
+				<rt rbspan="4" xml:lang="en">W3C Associate Chairman</rt>
+			</rtc>
+			</ruby> <font color="red">&lt;rtc&gt;</font> element - defines a ruby text container for complex ruby markup.
+		<br>
+		<ruby>
+			<rb>家辺 勝文</rb>
+			<rt>liaison</rt>
+		</ruby> <font color="red">&lt;ruby&gt;</font> element - provides a mechanism for annotating foreign characters.
+		<br>
+		<s>The guy is a fool.</s> The guy is an absolute genius. What was I thinking? <font color="red">&lt;s&gt;</font> element - renders text with a horizontal strike (line) through the middle.
+		<br>
+		<br>
+		<small>In this example, a support site provides an explanation of a 404 error:</small>
+		<br>
+		If the browser spits out an error message such as <samp>HTTP 404 - File not found</samp>, you may simply have typed the address incorrectly.
+		<br>
+		<small>Another usage that you may come across is to indicate choices from computer menu items (e.g. in a browser or application):</small>
+		<br>
+		The <samp>File</samp> menu is where you will find the important <samp>Load</samp> and <samp>Save</samp> commands. <font color="red">&lt;samp&gt;</font> element - defines a sample of the characters to be output.
+		<br>
+		<br>
+		Mark tried to get out of buying a round of drinks by getting progressively quieter as he talked: "Right, I'm off to stretch my legs and then get a bag of peanuts ... <small>back in a minute ... <small>everyone OK for a drink?</small></small> <font color="red">&lt;small&gt;</font> element - sets a reduced font size for the enclosed text.
+		<br>
+		He said it was <span class="important">really</span> important to know the difference. <font color="red">&lt;span&gt;</font> element - creates a generic inline container.
+		<br>
+		<strike>The guy is a fool.</strike> The guy is an absolute genius. What was I thinking? <font color="red">&lt;strike&gt;</font> element - renders text with a horizontal strike (line) through the middle.
+		<br>
+		Look for the sign that says <strong>turn left</strong>, then turn left! <font color="red">&lt;strong&gt;</font> element - signifies strongly emphasized content.
+		<br>
+		That's not just water. That's not just H<sub>2</sub>O. That's H<sub>2</sub>-woah! <font color="red">&lt;sub&gt;</font> element - specifies subscript text.
+		<br>
+		This document is a summary of findings. More details on the previous cases can be found in the referenced 'Prior Art' <sup>1</sup> and 'Intellectual Property History'<sup>2</sup> documents. <font color="red">&lt;sup&gt;</font> element - specifies superscript text.
+		<br>
+		The scores rolled in underneath the moustached face of Dickie Davies, hot off the teletype machines that someone was operating deep in the dungeons of ITV: &quot;<tt>Heart of Midlothian: 4, Queen of the South: 2, Plymouth Argyle 3 …</tt>&quot; <font color="red">&lt;tt&gt;</font> element - specified text to be formatted in monospace, or fixed-width font.
+		<br>
+		I want one of those remote controls vans. <u>How cool</u> are they? <font color="red">&lt;u&gt;</font> element - underlines enclosed text.
+		<br>
+		To forward incoming calls to another extension, press  <kbd>* 21 * <var>extension</var> #</kbd>. <font color="red">&lt;var&gt;</font> element - defines a variable part of a phrase or example.
+		<br>
+		<br>
+		<small>wbr suggests a few appropriate points in a movie phrase where it could be wrapped:</small>
+		<br>
+		Remember that song from Mary Poppins 'Super<wbr>califragilistic<wbr>expialidocious'?
+		<br>
+		<small>For browsers that support the element, when there is not enough room to render the whole phrase, it may appear as</small>
+		<br>
+		Remember that song from Mary Poppins 'Supercalifragilistic-
+		expialidocious'?
+		<br>
+		<small>Or with even less space:</small>
+		<br>
+		Remember that song from Mary Poppins 'Super-
+		califragilisticexpialidocious'?
+		<font color="red">&lt;wbr&gt;</font> element - suggests where in a word a break should occur.
+		<br>
+		<br>
+		<xmp>
+Stock ID    Description             Price         Quantity in Stock
+--------    -----------             -----         -----------------
+116         Inflatable Armchair     21.50                13
+119         Walkie Talkie           40.20                44
+</xmp> <font color="red">&lt;xmp&gt;</font> element - example text.
+	</p>
+</body>
+</html>

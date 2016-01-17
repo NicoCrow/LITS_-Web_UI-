@@ -1,0 +1,98 @@
+html {
+	margin: 0;
+	padding: 0;
+	background-color: #050505;
+}
+
+body {
+	width: 1000px;
+	margin: 0 auto;
+	color: #fff;
+}
+
+header {
+	padding-top: 40px;
+	position: relative;
+	text-align: center;
+	background: radial-gradient(ellipse at top center, rgba(66,41,44,1) 10%,rgba(62,20,45,1) 40%,rgba(38,8,40,1) 50%,rgba(5,5,5,0) 70%); /* W3C */
+    margin-bottom: 25px;
+}
+
+header>p {
+    color: #766271;
+}
+
+h2 {
+	font-size: 28pt;
+	font-family: 'Myriad Pro Regular','PT Sans', sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	color: #fff;
+}
+
+p {
+	font-size: 16px;
+	color: #828282;
+	font-family: 'Myriad Pro Regular','PT Sans', sans-serif;
+	font-style: normal;
+	font-weight: 100;
+    line-height: 1.5em;
+}
+
+button {
+	background-color: #26a8db;
+	font-size: 20pt;
+	font-family: 'Myriad Pro Regular','PT Sans', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	margin: 30px;
+	border-radius: 5px;
+	border: 2px solid #1282ae;
+	color: #fff;
+	width: 260px;
+	height: 55px;
+}
+
+section {
+	height: 300px;
+    display: inline-block;
+    margin: 50px 0;
+}
+
+.in_sec {
+	display: relative;
+    display: inline-block;
+    height: auto;
+	width: 470px;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 13px;
+}
+
+.text {
+    padding: 0 10px;
+}
+
+.blue {
+    background: radial-gradient(ellipse at bottom center, rgba(68,62,106,1) 5%,rgba(68,62,106,1) 25%,rgba(27,53,69,1) 50%,rgba(5,5,5,1) 75%);
+}
+
+#play {
+    margin-bottom: -4px;
+    padding: 0 59px;
+}
+
+#violet {
+    background: radial-gradient(ellipse at center, rgba(106,63,70,1) 0%,rgba(79,31,66,1) 25%,rgba(34,18,41,1) 60%,rgba(5,5,5,0) 80%); /* W3C */
+}
+
+#meet {
+    margin-bottom: -4px;
+    padding-left: 0;
+}
+
+footer {
+	text-align: center;
+	background: radial-gradient(ellipse at bottom center,  #42292c 0%,#3e142d 28%,#260828 58%,#050505 85%); /* W3C */
+    padding-bottom: 40px;
+}

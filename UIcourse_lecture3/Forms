@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Form #1</legend>
+			<p>Name:
+				<input type="text" name="Name" value="">
+			</p>
+			<p>
+				<select>
+					<option value="one">One</option>
+					<option value="two">Two</option>
+					<option value="three">Three</option>
+				</select>
+			</p>
+		</fieldset>
+		<fieldset>
+			<p>
+				<input type="radio" name="r1" value="one">One
+				<input type="radio" name="r1" value="two">Two
+				<input type="radio" name="r1" value="three">Three
+			</p>
+		</fieldset>
+		<fieldset>
+			<input type="checkbox" name="box" value="one">One
+			<input type="checkbox" name="box" value="two">Two
+			<input type="checkbox" name="box" value="three">Three
+		</fieldset>
+		<fieldset>
+			<input type="reset">
+			<input type="submit">
+		</fieldset>
+	</form>
+</body>
+</html>

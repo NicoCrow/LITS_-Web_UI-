@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cancel Form Submit</title>
+</head>
+<body>
+	<form name="myForm" action="action.php">
+		<input name="asv">
+		<input type="submit">
+	</form>
+	<script type="text/javascript">
+		document.myForm.onsubmit = function() {
+			return false;
+		}
+	</script>
+</body>
+</html>

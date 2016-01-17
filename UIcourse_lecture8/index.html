@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		/*String.prototype.sayHello = function() {
+			return "Hello, " + this;
+		}
+
+		var a = "123";
+
+		a.sayHello();
+
+
+
+		function myObject() {
+			return this;
+		};
+
+		myObject.prototype={};
+
+		myObject.prototype.hello= function(){return {};};
+
+		var a = new myObject();
+
+		a.hello();
+
+		typeof a;
+
+		a instanceof myObject;
+
+		var b = new myObject();
+		a.close();
+		b.close();
+		myObject.prototype.close = function (){return "close"};
+		a.close();
+		b.close();
+		a.close = 123;
+		a.close();
+
+
+		*/
+
+
+		function Human(){
+			this.age = 10;
+			return this;
+		};
+
+		Human.prototype = {
+			type:"human",
+			age:0,
+			whoAmI:function(){
+				return this.type;
+			}
+		}
+
+		var a = new Human();
+		a.type;
+		a.age;
+		a.whoAmI();
+
+		function Man(){
+			return this;
+		}
+		
+		Man.prototype = new Human();
+
+		Man.prototype.type = "man";
+
+
+		function Child(){
+			this age = 10;
+		}
+
+		Child.prototype = new Human();
+
+
+
+		(function(global){
+			function privateMethod(){
+				}
+				global.human = function (){
+				}
+				global.human.prototype=function{
+					say=function() {
+						return privateMethod();
+					}
+				}
+			}
+		(window))
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
